@@ -19,10 +19,10 @@ body
 {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
+    background-color: var(--Very-pale-blue);
     background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,6 +37,7 @@ body
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 12px;
+    box-shadow: 0px 14px 20px 0px rgba(56,41,224,0.2);
 }
 
 .card-bloque-total
