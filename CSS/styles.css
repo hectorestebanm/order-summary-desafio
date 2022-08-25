@@ -1,0 +1,207 @@
+:root
+{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: #3829e0;
+    --Bright-blue-hover: rgba(56, 41, 224, 0.5);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);    
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card
+{
+    max-width: 330px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.card-bloque-total
+{
+    text-align: center;
+    padding: 20px 33px;
+}
+
+.card-h1
+{
+    font-weight: 900;
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+.card-p
+{
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--Desaturated-blue);
+}
+
+.card-imagen
+{
+    width: 100%;
+}
+
+.card-bloque-1
+{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 22px;
+}
+
+.card-bloque-1__seccion
+{
+    margin-left: 14px;
+    margin-right: 36px;    
+}
+
+.card-bloque-1__h2-plan
+{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.card-bloque-1__h2-year
+{
+    font-size: 14px;
+    color: var(--Desaturated-blue);
+}
+
+.card-bloque-1__change
+{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.card-bloque-1__change:hover
+{
+    color: var(--Bright-blue-hover);
+    text-decoration: none;
+}
+
+.card-bloque-2
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-proceed
+{
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    background-color: var(--Bright-blue);
+    box-shadow: 0px 14px 20px 0px rgba(56,41,224,0.2);
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.card-proceed:hover
+{
+    background-color: var(--Bright-blue-hover);
+}
+
+.card-cancel
+{
+    font-weight: 700;
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+
+.card-cancel:hover
+{
+    color: black;
+}
+
+@media (min-width: 768px)
+{
+    body
+    {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+    .card
+    {
+        max-width: 405px;
+    }
+    .card-bloque-total
+    {
+        padding: 20px 46px;
+    }   
+    .card-h1
+    {
+        font-size: 24px;
+    }
+    .card-p
+    {
+        font-size: 15px;
+    }
+    .card-imagen
+    {
+    }
+    .card-bloque-1
+    {
+    }
+    .card-bloque-1__seccion
+    {
+        margin-right: 80px;    
+    }
+        .card-bloque-1__h2-plan
+    {
+    }
+    .card-bloque-1__h2-year
+    {
+    }
+    .card-bloque-1__change
+    {
+    }    
+    .card-bloque-2
+    {
+    }
+    .card-proceed
+    {
+        font-size: 15px;
+    }
+    .card-cancel
+    {
+        font-size: 15px;
+    }    
+}
+
+.attribution
+{
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a
+{
+    color: hsl(228, 45%, 44%);
+}
